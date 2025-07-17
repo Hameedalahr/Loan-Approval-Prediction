@@ -10,7 +10,7 @@ import numpy as np
 import streamlit as st
 
 # Load the trained model
-loaded_model = pickle.load(open("C:/Users/syeme/Downloads/Machine Learning/Project 4 - Loan Prediction/trained_model.sav", 'rb'))
+loaded_model = pickle.load(open("trained_model.sav", 'rb'))
 
 def loan_prediction(input_data):
     input_data_as_numpy_array = np.asarray(input_data)
